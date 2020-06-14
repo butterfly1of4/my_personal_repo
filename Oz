@@ -1,0 +1,33 @@
+mkdir House/
+cd House
+touch Dorothy
+touch Toto
+cd .. 
+mkdir Oz/
+cd Oz
+touch Good_Witch_of_the_North
+touch Good_Witch_of_the_South
+touch Wicked_Witch_of_the_West
+touch Wicked_Witch_of_the_East
+rm Wicked_Witch_of_the_East
+cd ..
+cd House
+mv /Users/butterfly1of4/Documents/GA/SEI/sandbox/House/Dorothy /Users/butterfly1of4/Documents/GA/SEI/sandbox/Oz/
+cd ..
+cd Oz
+touch Scarecrow Tin_Man Cowardly_Lion
+cd ..
+mkdir EmeraldCity/
+mv /Users/butterfly1of4/Documents/GA/SEI/sandbox/Oz/Tin_Man /Users/butterfly1of4/Documents/GA/SEI/sandbox/EmeraldCity
+mv /Users/butterfly1of4/Documents/GA/SEI/sandbox/Oz/Scarecrow /Users/butterfly1of4/Documents/GA/SEI/sandbox/EmeraldCity
+mv /Users/butterfly1of4/Documents/GA/SEI/sandbox/Oz/Cowardly_Lion /Users/butterfly1of4/Documents/GA/SEI/sandbox/EmeraldCity
+mv /Users/butterfly1of4/Documents/GA/SEI/sandbox/Oz/Dorothy /Users/butterfly1of4/Documents/GA/SEI/sandbox/EmeraldCity
+cd Oz
+touch Flying_Monkeys
+rm Wicked_Witch_of_the_West
+cd ..
+cd EmeraldCity
+echo "diploma" >> /Users/butterfly1of4/Documents/GA/SEI/sandbox/EmeraldCity/Scarecrow
+echo "heart shaped watch" >>/Users/butterfly1of4/Documents/GA/SEI/sandbox/EmeraldCity/Tin_Man
+echo "medal" >> /Users/butterfly1of4/Documents/GA/SEI/sandbox/EmeraldCity/Cowardly_Lion
+cat Scarecrow Tin_Man Cowardly_Lion
